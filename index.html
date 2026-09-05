@@ -151,7 +151,38 @@
       </header>
 
       <div class="flex gap-2 flex-1">
-        <aside class="w-80 bg-gray-500">aside</aside>
+        <aside
+          class="w-87.75 h-[calc(100vh-64px)] bg-[#121212] rounded-lg flex flex-col justify-between p-2 select-none"
+        >
+          <!--Phần trên: header + playlist content (có thể cuộn lại)-->
+          <div class="flex-1 flex flex-col min-h-0">
+            <!--Header: library và nút Create-->
+            <div
+              class="flex items-center justify-between px-4 py-3 text-[#b3b3b3]"
+            >
+              <!--Library-->
+              <button
+                class="flex items-center gap-3 hover:text-white transition-colors cursor-pointer font-bold text-base"
+              >
+                <span class="text-white">Your Library</span>
+              </button>
+
+              <!--Nút Create-->
+              <button
+                class="flex items-center gap-2 px-4 py-2 rounded-full bg-[#1f1f1f] hover:bg-[#282828] text-white text-sm font-bold transition-all cursor-pointer"
+                title="Create a playlist, folder, or Jam"
+              >
+                <i
+                  class="fi fi-rr-plus text-[#b3b3b3] text-sm leading-none translate-y-[2px]"
+                ></i>
+                <span>Create</span>
+              </button>
+            </div>
+
+            <!--Content container-->
+            <div></div>
+          </div>
+        </aside>
         <main class="bg-gray-900 flex-1">main</main>
       </div>
       <div id="controls" class="h-22 bg-amber-300">Controls</div>
